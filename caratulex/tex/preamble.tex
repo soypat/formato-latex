@@ -1,0 +1,38 @@
+\usepackage[spanish,mexico]{babel}
+\input{tex/footmult.tex} % Footnotes lindas
+\usepackage{graphicx, tikz, subcaption}
+
+\usepackage[onehalfspacing]{setspace}
+
+\usepackage{ieeetrantools}
+% HYPERREF
+\usepackage{xcolor}
+\definecolor{visigrey}{rgb}{.1,.15,.15} % Color de referencias/links
+\usepackage[
+	allcolors=visigrey, % !todos los colores verde
+	colorlinks=true, 
+]{hyperref} %Hyperref antes de geometry!
+
+\usepackage{pdfpages}
+\usepackage[a4paper,left=2cm,right=2cm]{geometry}
+\geometry{top=1cm,bottom=.5cm}
+\savegeometry{titlepage}
+\geometry{top=2cm,bottom=2cm}
+\savegeometry{main}
+
+
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+%\usepackage{sansmathfonts}
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault}
+
+\usepackage[square,numbers,sort]{natbib} % sort=en orden de aparición
+\bibliographystyle{unsrtnat}
+
+\setcounter{tocdepth}{2} % El nivel (numero) decide si se numera hasta las secciones, subsecciones o subsubsecciones
+\usepackage{todonotes}
+
+
+\def\Matlab{\(\textrm{\textsc{Matlab}}\)} %^\textrm{®}
